@@ -45,7 +45,6 @@ public partial class GameViewModel : ObservableObject
             return;
 
         //Letters Here 
-        //testtest
     }
 
 }
