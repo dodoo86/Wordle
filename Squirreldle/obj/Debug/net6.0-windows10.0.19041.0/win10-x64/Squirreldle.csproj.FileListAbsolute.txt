@@ -1,0 +1,12 @@
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Squirreldle.csproj.AssemblyReference.cache
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+F:\Squirreldle\Squirreldle\Squirreldle\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Squirreldle.GeneratedMSBuildEditorConfig.editorconfig
