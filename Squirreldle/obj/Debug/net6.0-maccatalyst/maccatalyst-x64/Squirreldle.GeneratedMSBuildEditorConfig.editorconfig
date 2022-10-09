@@ -7,33 +7,33 @@ build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Squirreldle
-build_property.ProjectDir = F:\Squirreldle\Squirreldle\Squirreldle\
+build_property.ProjectDir = F:\Programing\Wordle\Wordle\Squirreldle\
 
-[F:/Squirreldle/Squirreldle/Squirreldle/App.xaml]
+[F:/Programing/Wordle/Wordle/Squirreldle/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Squirreldle.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[F:/Squirreldle/Squirreldle/Squirreldle/AppShell.xaml]
+[F:/Programing/Wordle/Wordle/Squirreldle/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Squirreldle.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[F:/Squirreldle/Squirreldle/Squirreldle/MainPage.xaml]
+[F:/Programing/Wordle/Wordle/Squirreldle/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Squirreldle.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[F:/Squirreldle/Squirreldle/Squirreldle/Resources/Styles/Colors.xaml]
+[F:/Programing/Wordle/Wordle/Squirreldle/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Squirreldle.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[F:/Squirreldle/Squirreldle/Squirreldle/Resources/Styles/Styles.xaml]
+[F:/Programing/Wordle/Wordle/Squirreldle/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Squirreldle.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

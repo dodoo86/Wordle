@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T/wz5ZBcznDF3dbJyDKgXASidqffyun2qZK4T5N0nzJWDKm6MvbsxoO5UE3iDdPs+nN3a5GOR8OPFX8zxxdTow==",
+  "dgSpecHash": "81u1wGQJ365cNkpfwjvwKP9F5+kWHPa/ZvgD/426FxevEoY38qhOO1VqmhnGckuaGjzE8kx3wzzuiSWDGfs5Ug==",
   "success": true,
-  "projectFilePath": "F:\\Squirreldle\\Squirreldle\\Squirreldle\\Squirreldle.csproj",
+  "projectFilePath": "F:\\Programing\\Wordle\\Wordle\\Squirreldle\\Squirreldle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dodoo\\.nuget\\packages\\communitytoolkit.maui.core\\1.3.0\\communitytoolkit.maui.core.1.3.0.nupkg.sha512",
     "C:\\Users\\dodoo\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
