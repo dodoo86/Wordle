@@ -44,7 +44,8 @@ public partial class GameViewModel : ObservableObject
         if (columnIndex == 5)
             return;
 
-        //Letters Here
+        //Letters Here 
+        //testtest
     }
 
 }
