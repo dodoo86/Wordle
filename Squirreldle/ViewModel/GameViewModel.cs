@@ -6,7 +6,10 @@ namespace Squirreldle.ViewModel;
 
 public partial class GameViewModel : ObservableObject
 {
+    // 0 - 5
     private int rowIndex;
+
+    // 0 - 4
     private int columnIndex;
 
     [ObservableProperty]
@@ -15,6 +18,8 @@ public partial class GameViewModel : ObservableObject
     [RelayCommand]
     public void Enter()
     {
+        if (columnIndex != 5)
+            return;
 
         var valid = true;
 
@@ -36,5 +41,10 @@ public partial class GameViewModel : ObservableObject
     public void EnterLetter(char letter)
     {
 
+        if (columnIndex == 5)
+            return;
+
+        //Letters Here
     }
+
 }
