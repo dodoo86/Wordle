@@ -6,7 +6,8 @@
              xmlns:model="clr-namespace:Squirreldle.Model"
              x:DataType="viewmodel:GameViewModel">
 
-    <Grid RowDefinitions="*, Auto">
+    <Grid RowDefinitions="*, Auto"
+          Padding="10">
 
         <!--Game field-->
         <VerticalStackLayout
@@ -14,12 +15,15 @@
             <BindableLayout.ItemTemplate>
                 <DataTemplate x:DataType="model:WordRow">
                     <HorizontalStackLayout
+                        HorizontalOptions="Center"
                         BindableLayout.ItemsSource="{Binding Letters}">
                         <BindableLayout.ItemTemplate>
                             <DataTemplate x:DataType="model:Letter">
-                                <Button Style="{DynamicResource LetterButton}" 
-                                        Text="{Binding Input}"
-                                        BackgroundColor="{Binding Color}"/>
+                                <Frame Style="{DynamicResource LetterFrame}" 
+                                        BackgroundColor="{Binding Color}">
+                                    <Label Text="{Binding Input}" 
+                                           FontSize="Large"/>
+                                </Frame>
                             </DataTemplate>
                         </BindableLayout.ItemTemplate>
                     </HorizontalStackLayout>
