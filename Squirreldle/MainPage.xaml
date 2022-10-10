@@ -17,9 +17,9 @@
                         BindableLayout.ItemsSource="{Binding Letters}">
                         <BindableLayout.ItemTemplate>
                             <DataTemplate x:DataType="model:Letter">
-                                <Frame BorderColor="LightGray">
-                                    
-                                </Frame>
+                                <Button Style="{DynamicResource LetterButton}" 
+                                        Text="{Binding Input}"
+                                        BackgroundColor="{Binding Color}"/>
                             </DataTemplate>
                         </BindableLayout.ItemTemplate>
                     </HorizontalStackLayout>

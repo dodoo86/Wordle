@@ -14,10 +14,12 @@
                 <Setter Property="FontFamily" Value="OpenSansRegular" />
             </Style>
 
-            <Style x:Name="LetterButton" TargetType="Button">
+            <Style x:Key="LetterButton" TargetType="Button">
                 <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
                 <Setter Property="FontFamily" Value="OpenSansRegular" />
-                <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+                <Setter Property="BorderColor" Value="LightGray" />
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="CornerRadius" Value="5" />
                 <Setter Property="Padding" Value="14,10" />
             </Style>
             
