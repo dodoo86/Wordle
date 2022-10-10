@@ -7,15 +7,32 @@ namespace Squirreldle.ViewModel;
 public partial class GameViewModel : ObservableObject
 {
     // 0 - 5
-    private int rowIndex;
+    int rowIndex;
 
     // 0 - 4
-    private int columnIndex;
+    int columnIndex;
+
+    char[] correctAnswer;
 
     [ObservableProperty]
     private WordRow[] rows;
 
-    [RelayCommand]
+    public GameViewModel()
+    {
+        rows = new WordRow[6]
+        {
+            new WordRow(),
+            new WordRow(),
+            new WordRow(),
+            new WordRow(),
+            new WordRow(),
+            new WordRow()
+        };
+
+        correctAnswer = "david".ToCharArray();
+    }
+
+    [ICommand]
     public void Enter()
     {
         if (columnIndex != 5)
@@ -37,7 +54,7 @@ public partial class GameViewModel : ObservableObject
         }
     }
 
-    [RelayCommand]
+    [ICommand]
     public void EnterLetter(char letter)
     {
 
