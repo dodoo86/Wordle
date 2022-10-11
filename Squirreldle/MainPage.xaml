@@ -25,7 +25,9 @@
                                 <Frame Style="{DynamicResource LetterFrame}" 
                                         BackgroundColor="{Binding Color}">
                                     <Label Text="{Binding Input}" 
-                                           FontSize="Large"/>
+                                           FontSize="36"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
                                 </Frame>
                             </DataTemplate>
                         </BindableLayout.ItemTemplate>
@@ -46,7 +48,7 @@
                     <DataTemplate x:DataType="{x:Null}">
                         <Button Style="{DynamicResource LetterButton}" 
                                 Text="{Binding .}"
-                                Command="{Binding EnterLetterCommand}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
                                 CommandParameter="{Binding .}"/>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
@@ -59,7 +61,7 @@
                     <DataTemplate x:DataType="{x:Null}">
                         <Button Style="{DynamicResource LetterButton}" 
                                 Text="{Binding .}"
-                                Command="{Binding EnterLetterCommand}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
                                 CommandParameter="{Binding .}"/>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
@@ -72,7 +74,7 @@
                     <DataTemplate x:DataType="{x:Null}">
                         <Button Style="{DynamicResource LetterButton}" 
                                 Text="{Binding .}"
-                                Command="{Binding EnterLetterCommand}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
                                 CommandParameter="{Binding .}"/>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>

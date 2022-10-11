@@ -44,19 +44,21 @@ public partial class GameViewModel : ObservableObject
         if (columnIndex != 5)
             return;
 
-        var valid = true;
+        var correct = Rows[rowIndex].Validate(correctAnswer);
 
-        if (valid)
+        if (correct)
         {
-            if(rowIndex == 5)
-            {
-                //end of game
-            }
-            else
-            {
-                rowIndex++;
-                columnIndex = 0;
-            }
+            App.Current.MainPage.DisplayAlert("YOU WON!","You are so smart !", "ok");
+            return;
+        }
+        if(rowIndex == 5)
+        {
+            App.Current.MainPage.DisplayAlert("Game Over!", "You Lose !", "ok");
+        }
+        else
+        {
+            rowIndex++;
+            columnIndex = 0;
         }
     }
 
@@ -71,6 +73,10 @@ public partial class GameViewModel : ObservableObject
 
         if(letter == '<')
         {
+            if (columnIndex == 0)
+                return;
+            columnIndex--;
+            Rows[rowIndex].Letters[columnIndex].Input = '\0';
             return;
         }
 

@@ -17,9 +17,30 @@ public class WordRow
     }
 
     public Letter[] Letters { get; set; }
-    public void Validate(char[] correctAnswer)
+    public bool Validate(char[] correctAnswer)
     {
+        //is word valid
+        int count = 0;
         //Loop Trough Stuff.
+        for (int i = 0; i < Letters.Length; i++)
+        {
+            var letter = Letters[i];
+            if(letter.Input == correctAnswer[i])
+            {
+                letter.Color = Colors.Green;
+                count++;
+            }
+            else if(correctAnswer.Contains(letter.Input))
+            {
+                letter.Color = Colors.Yellow;
+            }
+            else
+            {
+                letter.Color = Colors.Gray;
+            }
+        }
+
+        return count == 5;
     }
 }
 
