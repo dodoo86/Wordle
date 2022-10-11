@@ -14,6 +14,10 @@ public partial class GameViewModel : ObservableObject
 
     char[] correctAnswer;
 
+    public char[] KeyboardRow1 { get; }
+    public char[] KeyboardRow2 { get; }
+    public char[] KeyboardRow3 { get; }
+
     [ObservableProperty]
     private WordRow[] rows;
 
@@ -29,10 +33,12 @@ public partial class GameViewModel : ObservableObject
             new WordRow()
         };
 
-        correctAnswer = "david".ToCharArray();
+        correctAnswer = "DAVID".ToCharArray();
+        KeyboardRow1 = "QWERTYUIOP".ToCharArray();
+        KeyboardRow2 = "ASDFGHJKL".ToCharArray();
+        KeyboardRow3 = "<ZXCVBNM>".ToCharArray();
     }
 
-    [ICommand]
     public void Enter()
     {
         if (columnIndex != 5)
@@ -57,11 +63,22 @@ public partial class GameViewModel : ObservableObject
     [ICommand]
     public void EnterLetter(char letter)
     {
+        if(letter == '>')
+        {
+            Enter();
+            return;
+        }
+
+        if(letter == '<')
+        {
+            return;
+        }
 
         if (columnIndex == 5)
             return;
 
-        //Letters Here 
+        Rows[rowIndex].Letters[columnIndex].Input = letter;
+        columnIndex++;
     }
 
 }

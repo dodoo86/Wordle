@@ -16,20 +16,21 @@
 
             <Style x:Key="LetterFrame" TargetType="Frame">
                 <Setter Property="BorderColor" Value="LightGray" />
-                <Setter Property="CornerRadius" Value="5" />
                 <Setter Property="Padding" Value="14,14" />
                 <Setter Property="WidthRequest" Value="70" />
-                <Setter Property="HeightRequest" Value="75" />
-                <Setter Property="Margin" Value="2" />
+                <Setter Property="HeightRequest" Value="90" />
             </Style>
 
             <Style x:Key="LetterButton" TargetType="Button">
                 <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
                 <Setter Property="FontFamily" Value="OpenSansRegular" />
                 <Setter Property="BorderColor" Value="LightGray" />
                 <Setter Property="BorderWidth" Value="2" />
                 <Setter Property="CornerRadius" Value="5" />
-                <Setter Property="Padding" Value="14,10" />
+                <Setter Property="WidthRequest" Value="35" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="Padding" Value="4" />
             </Style>
             
         </ResourceDictionary>

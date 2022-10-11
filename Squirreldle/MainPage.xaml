@@ -7,14 +7,17 @@
              x:DataType="viewmodel:GameViewModel">
 
     <Grid RowDefinitions="*, Auto"
-          Padding="10">
+          Padding="8,12,8,12">
 
         <!--Game field-->
+        
         <VerticalStackLayout
+            Spacing="8"
             BindableLayout.ItemsSource="{Binding Rows}">
             <BindableLayout.ItemTemplate>
                 <DataTemplate x:DataType="model:WordRow">
                     <HorizontalStackLayout
+                        Spacing="8"
                         HorizontalOptions="Center"
                         BindableLayout.ItemsSource="{Binding Letters}">
                         <BindableLayout.ItemTemplate>
@@ -29,9 +32,55 @@
                     </HorizontalStackLayout>
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
-            
+
         </VerticalStackLayout>
 
         <!--Keyboard-->
+
+        <VerticalStackLayout Grid.Row="1" Spacing="4">
+            <HorizontalStackLayout
+                        Spacing="2"
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding KeyboardRow1}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource LetterButton}" 
+                                Text="{Binding .}"
+                                Command="{Binding EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                        Spacing="2"
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding KeyboardRow2}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource LetterButton}" 
+                                Text="{Binding .}"
+                                Command="{Binding EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                        Spacing="4"
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding KeyboardRow3}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource LetterButton}" 
+                                Text="{Binding .}"
+                                Command="{Binding EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+
+
     </Grid>
 </ContentPage>
